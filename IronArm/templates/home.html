@@ -1,0 +1,380 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'img/icon2.png' %}" type="image/x-icon">
+
+    <!-- Remixcon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <title>IronArm gym center</title>
+
+    {% load static %}
+</head>
+<body>
+
+        <!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            <img src="{% static 'img/icon2.png' %}" alt="logo" style="width: 1.50rem"> BEROTOT
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#program" class="nav__link">Program</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#choose" class="nav__link">Choose Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#pricing" class="nav__link">Pricing</a>
+                </li>
+
+                <div class="nav__link">
+                    <a href="#footer" class="button nav__button">
+                        Register Now
+                    </a>
+                </div>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <!--Toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
+
+<!--==========MAIN==========-->
+<main class="main">
+    <!--========== HOME ==========-->
+    <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h2 class="home__subtitle">MAKE YOUR</h2>
+                <h1 class="home__title">BODY SHAPE</h1>
+                <p class="home__description">
+                    In here we will help you to shape and built you ideal
+                    body and live your life to the fullest.
+                </p>
+                <a href="#" class="button button__flex">
+                    Get Started <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="home__images">
+                <img src="{% static 'img/home_img.png' %}" alt="" class="home__img">
+
+                <div class="home__triangle home__triangle-3"></div>
+                <div class="home__triangle home__triangle-2"></div>
+                <div class="home__triangle home__triangle-1"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--= = = = = = = = = =  LOGOS  = = = = = = = = = =-->
+    <section class="logos section">
+        <div class="logos__container container grid">
+            <img src="{% static 'img/olympic_logo5.png' %}" alt="logo image" class="logos__img">
+            <img src="{% static 'img/logo1.png' %}" alt="logo image" class="logos__img">
+            <img src="{% static 'img/rebook_logo3.png' %}" alt="logo image" class="logos__img">
+            <img src="{% static 'img/diadora_logo6.png' %}" alt="logo image" class="logos__img">
+        </div>
+    </section>
+
+    <!--========== PROGRAM ==========-->
+    <section class="program section" id="program">
+        <div class="container">
+            <div class="section__data">
+                <h2 class="section__subtitle">Our Program</h2>
+                <div class="section__titles">
+                    <h1 class="section__title-border">BUILD YOUR</h1>
+                    <h1 class="section__title">BEST BODY</h1>
+                </div>
+            </div>
+
+            <div class="program__container grid">
+
+                <!-- Article-1 -->
+                <article class="program__card">
+                    <div class="program__shape">
+                        <img src="{% static 'img/programmuscle-1.png' %}" alt="program image" class="program__img">
+                    </div>
+
+                    <h3 class="program__title">Flex Muscle</h3>
+
+                    <p class="program__description">
+                        Creating tension that's temporarily making the muscle fibers smaller or contracted.
+                    </p>
+
+                    <a href="#" class="program__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <!-- Article-2 -->
+                <article class="program__card">
+                    <div class="program__shape">
+                        <img src="{% static 'img/programcardio-2.png' %}" alt="program image" class="program__img">
+                    </div>
+
+                    <h3 class="program__title">Cardio Exercise</h3>
+
+                    <p class="program__description">
+                        Exercise your heart rate up and keeps it up for a prolonged period of time.
+                    </p>
+
+                    <a href="#" class="program__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <!-- Article-3 -->
+                <article class="program__card">
+                    <div class="program__shape">
+                        <img src="{% static 'img/programyoga-3.png' %}" alt="program image" class="program__img">
+                    </div>
+
+                    <h3 class="program__title">Basic Yoga</h3>
+
+                    <p class="program__description">
+                        Diaphragmatic this is the most common breathing technique you'll find in yoga.
+                    </p>
+
+                    <a href="#" class="program__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <!-- Article-4 -->
+                <article class="program__card">
+                    <div class="program__shape">
+                        <img src="{% static 'img/programWeightLift-4.png' %}" alt="program image"
+                             class="program__img">
+                    </div>
+
+                    <h3 class="program__title">Weight Lifting</h3>
+
+                    <p class="program__description">
+                        Attempts a maximum weight single lift of a barbell loaded with weight plates.
+                    </p>
+
+                    <a href="#" class="program__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    {% comment %} ========== Choose Us ========== {% endcomment %}
+
+    <section class="choose section" id="choose">
+        <div class="choose__overflow">
+            <div class="choose_container container grid">
+                <div class="choose__content">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">
+                            Best Reason
+                        </h2>
+                        <div class="section__titles">
+                            <h1 class="section__title-border">WHY</h1>
+                            <h1 class="section__title">CHOOSE US ?</h1>
+                        </div>
+                    </div>
+
+                    <p class="choose__description">
+                        Choose your favourite class and start now. Remember the only bad workout is the one you didn't do.
+                    </p>
+
+                    <div class="choose__data">
+                        <div class="choose__group">
+                            <h3 class="choose__number">200+</h3>
+                            <p class="choose__subtitle">Total Members</p>
+                        </div>
+                        <div class="choose__group">
+                            <h3 class="choose__number">50+</h3>
+                            <p class="choose__subtitle">Best Trainers</p>
+                        </div>
+                        <div class="choose__group">
+                            <h3 class="choose__number">25+</h3>
+                            <p class="choose__subtitle">Programs</p>
+                        </div>
+                        <div class="choose__group">
+                            <h3 class="choose__number">100+</h3>
+                            <p class="choose__subtitle">Awards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choose__images">
+                    <img src="{% static 'img/choose_image.png' %}" alt="choose image" class="choose__img">
+
+                    <div class="choose__triangle choose__triangle-1"></div>
+                    <div class="choose__triangle choose__triangle-2"></div>
+                    <div class="choose__triangle choose__triangle-3"></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+    {% comment %} =========== Pricing ========== {% endcomment %}
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section__data">
+                <h2 class="section__subtitle">Pricing</h2>
+                <div class="section__titles">
+                    <h1 class="section__title-border">OUR</h1>
+                    <h1 class="section__title">SPECIAL PLAN</h1>
+                </div>
+            </div>
+
+            <div class="pricing__container grid">
+                <article class="pricing__card">
+                    <header class="pricing__header">
+                        <div class="pricing__shape">
+                            {% comment %} <img src="{% static 'img/#' %}" alt="pricing image" class="pricing__img"> {% endcomment %}
+                        </div>
+
+                        <h1 class="pricing__title">BASIC PACKAGE</h1>
+                        <h2 class="pricing__number">$120</h2>
+                    </header>
+
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 5 Days In A Week
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Sweatshirt
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Bottle of Protein
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Access To Videos
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Muscle Stretching
+                        </li>
+                    </ul>
+
+                    <a href="#" class="button button__flex pricing__button">
+                        Purchase Now <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="pricing__card">
+                    <header class="pricing__header">
+                        <div class="pricing__shape">
+                            {% comment %} <img src="{% static 'img/#' %}" alt="pricing image" class="pricing__img"> {% endcomment %}
+                        </div>
+
+                        <h1 class="pricing__title">PREMIUM PACKAGE</h1>
+                        <h2 class="pricing__number">$240</h2>
+                    </header>
+
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 5 Days In A Week
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Sweatshirt
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Bottle of Protein
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Access To Videos
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Muscle Stretching
+                        </li>
+                    </ul>
+
+                    <a href="#" class="button button__flex pricing__button">
+                        Purchase Now <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="pricing__card">
+                    <header class="pricing__header">
+                        <div class="pricing__shape">
+                            {% comment %} <img src="{% static 'img/#' %}" alt="pricing image" class="pricing__img"> {% endcomment %}
+                        </div>
+
+                        <h1 class="pricing__title">DIAMOND PACKAGE</h1>
+                        <h2 class="pricing__number">$420</h2>
+                    </header>
+
+                    <ul class="pricing__list">
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 5 Days In A Week
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Sweatshirt
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> 01 Bottle of Protein
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Access To Videos
+                        </li>
+                        <li class="pricing__item">
+                            <i class="ri-check-line"></i> Muscle Stretching
+                        </li>
+                    </ul>
+
+                    <a href="#" class="button button__flex pricing__button">
+                        Purchase Now <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+
+    {% comment %} ==========Calculate========== {% endcomment %}
+    <section class="calculate section">
+
+    </section>
+
+    <!--==========MAIN==========-->
+
+</main>
+
+<!========== FOOTER ==========>
+<footer class="footer section" id="footer">
+
+</footer>
+
+
+<!-- home js -->
+<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+
+
+</body>
+</html>
